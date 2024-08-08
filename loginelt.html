@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+    
+
+     
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="login-container">
+        <h1>E-LESSON<br>TEACHER<br>GENERAL<br>LOGIN</h1>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button><br><br>
+
+        <a href="https://products-services.github.io/PretoriaSchools/index.html"><button class = "button3"><b>< BACK</b></button></a><br><br>
+        
+    </div>
+    <script>
+        const passwords = {
+            "8273elt": "rece1elt.html",
+            "3872elt": "rece2elt.html",
+            "1505elt": "rece3elt.html",
+            "0801elt": "nur1elt.html",
+            "9483elt": "nur2elt.html",
+            "6130elt": "nur3elt.html",
+            "0817elt": "kg1elt.html",
+            "3157elt": "kg2elt.html",
+            "6953elt": "kg3elt.html",
+            "8502elt": "bas1elt.html",
+            "8662elt": "bas2elt.html",
+            "3089elt": "bas3elt.html",
+            "0805elt": "bas4elt.html",
+            "1986elt": "bas5elt.html",
+            "6466elt": "bas6elt.html",
+            "8458elt": "jss1elt.html",
+            "8508elt": "jss2elt.html",
+            "7517elt": "jss3elt.html",
+            "2276elt": "sss1elt.html",
+            "9752elt": "sss2elt.html",
+            "3300elt": "sss3elt.html"
+        };
+
+        function checkPassword() {
+            const passwordInput = document.getElementById('password').value;
+            if (passwords[passwordInput]) {
+                window.location.href = passwords[passwordInput];
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+    
+
+     
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="login-container">
+        <h1>E - LIBRARY<br>GENERAL<br>LOGIN</h1>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button><br><br>
+
+        <a href="https://products-services.github.io/PretoriaSchools/index.html"><button class = "button3"><b>< BACK</b></button></a><br><br>
+        
+    </div>
+    <script>
+        const passwords = {
+            "8273el": "rece1el.html",
+            "3872el": "rece2el.html",
+            "1505el": "rece3el.html",
+            "0801el": "nur1el.html",
+            "9483el": "nur2el.html",
+            "6130el": "nur3el.html",
+            "0817el": "kg1el.html",
+            "3157el": "kg2el.html",
+            "6953el": "kg3el.html",
+            "8502el": "bas1el.html",
+            "8662el": "bas2el.html",
+            "3089el": "bas3el.html",
+            "0805el": "bas4el.html",
+            "1986el": "bas5el.html",
+            "6466el": "bas6el.html",
+            "8458el": "jss1el.html",
+            "8508el": "jss2el.html",
+            "7517el": "jss3el.html",
+            "2276el": "sss1el.html",
+            "9752el": "sss2el.html",
+            "3300el": "sss3el.html"
+        };
+
+        function checkPassword() {
+            const passwordInput = document.getElementById('password').value;
+            if (passwords[passwordInput]) {
+                window.location.href = passwords[passwordInput];
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
