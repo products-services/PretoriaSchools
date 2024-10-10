@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRETORIA SCHOOLS</title>
+    <link rel="stylesheet" href="style1.css" />
+    
+
+     
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="login-container">
+        <h1>E-MATERIAL<br>&<br>E-CLASSES<br>GENERAL<br>LOGIN</h1>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button><br><br>
+
+        <a href="https://products-services.github.io/PretoriaSchools/index.html"><button class = "button3"><b>< BACK</b></button></a><br><br>
+        
+    </div>
+    <script>
+        const passwords = {
+            "8273emec": "rece1emec.html",
+            "3872emec": "rece2emec.html",
+            "1505emec": "rece3emec.html",
+            "0801emec": "nur1emec.html",
+            "9483emec": "nur2emec.html",
+            "6130emec": "nur3emec.html",
+            "0817emec": "kg1emec.html",
+            "3157emec": "kg2emec.html",
+            "6953emec": "kg3emec.html",
+            "8502emec": "bas1emec.html",
+            "8662emec": "bas2emec.html",
+            "3089emec": "bas3emec.html",
+            "0805emec": "bas4emec.html",
+            "1986emec": "bas5emec.html",
+            "6466emec": "bas6emec.html",
+            "8458emec": "jss1emec.html",
+            "8508emec": "jss2emec.html",
+            "7517emec": "jss3emec.html",
+            "2276emec": "sss1emec.html",
+            "9752emec": "sss2emec.html",
+            "3300emec": "sss3emec.html"
+        };
+
+        function checkPassword() {
+            const passwordInput = document.getElementById('password').value;
+            if (passwords[passwordInput]) {
+                alert('Your N1,000 expires \n Fri/21/Jan/2025');
+                window.location.href = passwords[passwordInput];
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
